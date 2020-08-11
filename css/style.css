@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+.header{
+	background-image: url("../pics/pic1.jpg");
+	text-align: center;
+	position: sticky;
+}
+
+.header .title li{
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 30px;
+}
+
+.header .title a li{
+	color: white;
+	text-shadow: 2px 2px green;
+	text-decoration: none;
+}
+
+.header h1{
+	font-size: 60px;
+	color: white;
+	text-shadow: 2px 2px green;
+}
+
+.header nav{
+	background-color: rgba(0,0,0,0.8);
+}
+
+
+.header nav a{
+	text-decoration: none;
+	list-style-type: none;
+	color: green;
+}
+
+.header nav a:hover{
+	color: white;
+}
+
+
+.header nav .menu{
+	display: inline-block;
+	padding: 10px;
+	position: relative;
+}
+
+.header nav .menu .submenu{
+	border: 1px solid green;
+	background-color: white;
+	position: absolute;
+	width: 150px;
+	margin-top: 5px;
+	padding: 15px;
+	z-index: 1;
+	text-align: left;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s;
+}
+
+.header .submenu a li{
+	padding: 10px 0px;
+}
+
+.header .submenu a:hover{
+	color: black;
+}
+
+.header nav .menu:hover .submenu{
+	opacity: 1;
+	visibility: visible;
+}
+
+
